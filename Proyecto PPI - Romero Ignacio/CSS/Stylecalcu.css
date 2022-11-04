@@ -1,0 +1,121 @@
+body{
+  background: url(../IMG/Home.png)
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: solid 1px #c2c2c2;
+  padding-bottom: 10px;
+  margin: 250px;
+  background: #000000;
+}
+
+h3{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+input[type=textfield] {
+    width: 75%;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 8px 0;
+    border: 1px solid rgb(65, 12, 163);
+    border-radius: 1px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background: rgb(66, 13, 163);
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #581fb4;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    min-width: 21%;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+header{
+	width: 100%;
+	height: 90px;
+	background-color: #000000;
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	margin-left: 4em;
+	padding: 5px 20px 0;
+	transform: scale(3);
+	height: 80px;
+}
+
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #a532f1;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #0b132b;
+	position: absolute;
+	width: 100%;
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
